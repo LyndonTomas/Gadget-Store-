@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<!-- For the Buttons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- End of Bootstrap -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../CSS/css.css">
+
+	<!-- Local Javascript -->
+	<script type="text/javascript" src="../Js/js.js"></script>
+</head>
+<body onload="ready()">
+	<br>
+	<a href="landingpage (2-12-2020).html"><img id="logo" src="../Images/logo.png" width="80px" height="80px" title="Home"></a>
+	<br>
+	<center><h1>Lyndon's Tech Zone</h1></center>
+	<br>
+		<nav class="navBar">
+			<span><b>Username:&nbsp;&nbsp; </b><a id="LOGOUT" onclick="LogOut()" href="#">tomas</a></span>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<button onclick="DisableEnableChecker()" class="btn btn-primary" data-toggle="modal" data-target="#cartItemsModal">VIEW CART</button>
+		</nav>
+		<center>
+		<h1 class="sectionHeader">Smartphones</h1>
+
+		
+<div class="store-items">
+		<!-- Item #1 -->
+		<div class="store-item">
+			<div class="store-item-title">iPhone 11</div>
+			<img data-toggle="modal" data-target="#Modal" class="store-item-image" src="../Images/item1.jpg">
+
+
+					<div class="store-item-desc"><center>
+						<img src="../Images/item1.jpg"></center><br><br>All‑new dual‑camera system. Take your photos from wide to ultra wide. A redesigned interface uses the new Ultra Wide camera to show you what’s happening outside the frame — and lets you capture it. Shoot and edit videos as easily as you do photos. It’s the world’s most popular camera, now with a whole new perspective.</div>
+
+
+			<div class="store-item-details">
+				<span class="store-item-price">Php 10.00</span>
+				<button onclick="DisableEnableChecker()" class="btn btn-primary store-item-button">ADD TO CART</button>
+			</div>
+		</div>
+		
+		<!-- Item #2 -->
+		<div class="store-item">
+			<div class="store-item-title">Note 10</div>
+			<img data-toggle="modal" data-target="#Modal" class="store-item-image" src="../Images/item2.jpg">
+
+			<div class="store-item-desc">
+			<center>
+						<img src="../Images/item2.jpg"></center><br><br>Samsung built the Galaxy Note brand on delivering the best big-screen phones around, but the best thing about the new Galaxy Note 10 is how delightfully small it is.The 6.3-inch Note 10 is one of the most compact big-screen phones yet, thanks to its nearly bezel-free Infinity-O screen — and some features Samsung left on the cutting room floor. The Note 10 also boasts several S-Pen enhancements (including gestures), new video recording features and a new way to mirror the phone on a PC. </div>
+			
+
+			<div class="store-item-details">
+				<span class="store-item-price">Php 20.00</span>
+				<button class="btn btn-primary store-item-button">ADD TO CART</button>
+			</div>
+		</div>
+
+		<!-- Item #3 -->
+		<div class="store-item">
+			<div class="store-item-title">Pixel 4</div>
+			<img data-toggle="modal" data-target="#Modal" class="store-item-image" src="../Images/item3.jpg">
+
+			<div class="store-item-desc">
+			<center>
+						<img src="../Images/item3.jpg"></center><br><br>The Pixel 4 XL has a fantastic camera, but basic issues on the hardware front prevent it from being a great phone. The battery life is woefully inadequate, and 64GB of storage is nowhere enough for a flagship in 2019. You're better off waiting for the inevitable discount before getting your hands on one.</div>
+			
+
+			<div class="store-item-details">
+				<span class="store-item-price">Php 20.00</span>
+				<button class="btn btn-primary store-item-button">ADD TO CART</button>
+			</div>
+		</div>
+	
+	
+	<br>
+	<br>
+	<br>
+
+	<!-- Headsets -->
+<h1 class="sectionHeader">Headsets</h1>
+	
+	
+		<!-- Item #4 -->
+		<div class="store-item">
+			<div class="store-item-title">Studio 3</div>
+			<img data-toggle="modal" data-target="#Modal" class="store-item-image" src="../Images/item4.jpg">
+
+
+					<div class="store-item-desc"><center>
+						<img src="../Images/item4.jpg"></center><br><br>Great noise cancelling. 20-hour minimum battery life. Audio quality has improved from older models. TiredAndroid phone users might get worse battery life.</div>
+
+
+			<div class="store-item-details">
+				<span class="store-item-price">Php 15.00</span>
+				<button class="btn btn-primary store-item-button">ADD TO CART</button>
+			</div>
+		</div>
+		
+		<!-- Item #5 -->
+		<div class="store-item">
+			<div class="store-item-title">Kraken V2</div>
+			<img data-toggle="modal" data-target="#Modal" class="store-item-image" src="../Images/item5.jpg">
+
+			<div class="store-item-desc"><center>
+						<img src="../Images/item5.jpg"></center><br><br>The headphones have multiplatform support. The multiplatform support essentially means that you can easily plug-in and play into most of the devices you own. In addition to this, the cupping the headphones use is incredibly soft. The softness ensures that you can keep the headphones on your ears for long periods without tiring. </div>
+			
+
+			<div class="store-item-details">
+				<span class="store-item-price">Php 13.00</span>
+				<button class="btn btn-primary store-item-button">ADD TO CART</button>
+			</div>
+		</div>
+
+		<!-- Item #6 -->
+		<div class="store-item">
+			<div class="store-item-title">Arctis 3</div>
+			<img data-toggle="modal" data-target="#Modal" class="store-item-image" src="../Images/item6.jpg">
+
+			<div class="store-item-desc"><center>
+						<img src="../Images/item6.jpg"></center><br><br>The SteelSeries Arctis 3 is a good headset. It's not a great headset; that honor is reserved for the Arctis 5and 7. It's one of the better options in the $80 range — noticeably better than the Kingston HyperX Cloud II, for example — but its obtuse software setup and just-pretty-good music performance hold it back.</div>
+			
+
+			<div class="store-item-details">
+				<span class="store-item-price">Php 14.00</span>
+				<button class="btn btn-primary store-item-button">ADD TO CART</button>
+			</div>
+		</div>
+	</div>
+	</center>
+
+	<br>
+	<br>
+	<br>
+	
+
+	<div id="cartItemsModal" class="modal fade">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<h5>CART SUMMARY</h5>
+					<button class="close" type="button" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body">
+					<input type="checkbox" name="" id="select-all" onclick="CheckboxFunction()">
+					Select All
+					&nbsp;&nbsp;&nbsp;
+					<button class="btn btn-danger" onclick="RemoveSelectedCheckbox()">Remove Selected</button>
+					<form method="get" action="orderformpage.html">
+					<div class="cart-items">
+						
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<span class="cart-total-price">Php 0.00</span>
+					&nbsp;&nbsp;&nbsp;
+					
+						<button id="CHECKOUT" onclick="PurchaseFunction()" class="CHECKOUT btn btn-secondary"> Checkout</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--Movie Description DYNAMIC-->
+
+	<div class="modal fade" id="Modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<span class="movie-title"></span>
+
+					<button class="close" type="button" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body">
+					
+					<span class="movie-desc"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- End of Bootstrap -->
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../CSS/css.css">
+
+	<!-- Local Javascript -->
+	<script type="text/javascript" src="../Js/js.js"></script>
+
+</head>
+<body onload="SessionStorageClear()">
+	<br>
+	<a href="landingpage (2-12-2020).html"><img id="logo" src="../Images/logo.png" width="80px" height="80px" title="Home"></a>
+	<br>
+	<center><h1>LT's Tech Zone</h1></center>
+	<br>
+
+	<!-- Div for Register and Log In -->
+	<div class="LogandReg">
+
+		<!-- Log In Button -->
+		<button class="btn btn-primary" data-toggle="modal" data-target="#Login">Login</button>
+		
+		<!-- Register Button -->
+		<button class="btn btn-success" data-toggle="modal" data-target="#Register">Register</button>
+
+
+		<!--Log In-->
+		<div id="Login" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content"><!--Content-->
+					<!--Modal Header-->
+					<div class="modal-header">
+						Log In
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<form onsubmit="return validate()" id="form" action="home.html" method="get">
+
+
+					<!-- Scratch Form -->
+					<div class="input-group">
+						<div class="input-group-prepend">
+						<!-- Username -->
+						<span class="input-group-text">Username</span>
+						</div>
+						<input id="uname" type="text" name="Username" class="form-control">
+					</div>
+
+
+					<!-- Password -->
+					<div class="input-group">
+					<div class="input-group-prepend">
+						<!-- Username -->
+						<span class="input-group-text">Password: </span>
+						</div>
+					<input type="password" name="password" class="form-control">
+					</div>
+					<br>
+					<br>
+					<hr>
+					<div class="modal-footer">
+						<button class="btn btn-secondary" type="submit" onclick="SubmitFunction()" value="submit">SUBMIT</button>	
+					</div>
+					
+					</form>
+					<!-- END Form -->
+			</div>
+		</div>
+	</div>
+
+		<!--Register-->
+		<div id="Register" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content"><!--Content-->
+					<!--Modal Header-->
+					<div class="modal-header">
+						Register
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Scratch Form -->
+					<form onsubmit="return regvalidate()" id="form" action="home.html" method="get">
+					<br>
+					<!-- Username -->
+					<label>Username: </label>
+					<input id="resuname" type="text" name="Username" class="form-control">
+					<br>
+					<!-- Full Name -->
+					<label>Full Name: </label>
+					<input type="text" name="fullname" class="form-control">
+					<br>
+					<label>Email:</label>
+					<input type="email" id="email" name="email" class="form-control">
+					<br>
+					<!-- Password -->
+					<label>Password: </label>
+					<input type="password" name="password" class="form-control">
+					<br>
+					<div class="modal-footer">
+						
+					<button class="btn btn-secondary" type="submit" onclick="SubmitFunction()" value="submit">SUBMIT</button>	
+					</div>
+					
+					</form>
+					<!-- END -->
+					</div>
+				</div>
+			</div>
+	</div>
+	<br>
+
+	<!-- Carousel -->
+	<div id="carouselSample" class="carousel slide" data-ride="carousel">
+
+			<div class="carousel-inner">
+
+				<!--Item-->
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="../Images/CP1.jpg">
+					<div class="carousel-caption">
+						<h5> iPhone 11</h5>
+						<p>All‑new dual‑camera system. Take your photos from wide to ultra wide. A redesigned interface uses the new Ultra Wide camera to show you what’s happening outside the frame — and lets you capture it. Shoot and edit videos as easily as you do photos. It’s the world’s most popular camera, now with a whole new perspective.
+						</p>
+					</div>
+				</div>
+
+				<!--Item-->
+				<div class="carousel-item">
+					<img class="d-block w-100" src="../Images/CP2.jpg" >
+					<div class="carousel-caption">
+						<h5>Note 10</h5>
+						<p>Samsung built the Galaxy Note brand on delivering the best big-screen phones around, but the best thing about the new Galaxy Note 10 is how delightfully small it is.The 6.3-inch Note 10 is one of the most compact big-screen phones yet, thanks to its nearly bezel-free Infinity-O screen — and some features Samsung left on the cutting room floor. The Note 10 also boasts several S-Pen enhancements (including gestures), new video recording features and a new way to mirror the phone on a PC. </p>
+					</div>
+				</div>
+
+				<!--Item-->
+				<div class="carousel-item">
+					<img class="d-block w-100" src="../Images/CP3.jpg">
+					<div class="carousel-caption">
+						<h5>Google Pixel 4</h5>
+						<p>The Pixel 4 XL has a fantastic camera, but basic issues on the hardware front prevent it from being a great phone. The battery life is woefully inadequate, and 64GB of storage is nowhere enough for a flagship in 2019. You're better off waiting for the inevitable discount before getting your hands on one.</p>
+					</div>
+				</div>
+
+				
+			<!--Prev-->
+			<a href="#carouselSample" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<!--Next-->
+			<a href="#carouselSample" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body{
+	background-color: #808080;
+}
+
+.LogandReg{
+	background-color: #a6a6a6; 
+	padding: 10px; 
+	margin-top margin-bottom: 10px;
+	margin-top, margin-bottom: 5px;
+}
+
+.navBar{
+	margin: 40px;
+	padding: 13px;
+	background-color: #eb9834;
+	max-width: 80%;
+	border-radius: 25px;
+}
+
+.navbarItem{
+	margin: 5px;
+	padding: 5px;
+	padding-bottom: 10px; 
+	padding-top: 5px; 
+	background-color: black;
+	border-radius: 5px;
+}
+
+.store-item-desc{
+	display: none;
+}
+
+.store-items {
+			display: inline-block;
+		}
+
+.store-item{/*
+			width: 200px;
+			height: 200px;*/
+			/*background-color: blue;*/
+			color: black;
+			display: inline-block;
+			margin:10px; 
+			padding: 10px;
+			border-radius: 10px;
+			border: 6px solid;
+			border-color: #EB9834;
+			/*overflow: auto;*/
+}
+
+.store-item-image{
+			width: 173px;
+			height: 256px;
+}
+
+.cart-item-image{
+			width: 100px;
+			height: 100px;
+}
+
+.cart-item-price-base{
+			display: none;
+}
+
+.store-item-title{
+	padding-bottom: 5px;
+}
+
+.store-item-image{
+	padding-bottom: 5px;
+}
+.backtoCartLink{
+	margin: 40px;
+	padding: 13px;
+	background-color: #eb9834;
+	border-radius: 25px;
+}
+
+#logo{
+	margin-left: 30px;
+}
+
+.PurchasedContainer{
+	background-color: #56BAEC;
+	border-radius: 15px;
+	max-width: 80%;
+	margin-left: 40px;
+}
+
+.TotItemsCon{
+	background-color: #56BAEC;
+	border-radius: 15px;
+	max-width: 30%;
+	margin-left: 40px;
+}
+
+.TotItemsCon label{
+	padding-top: 5px;
+	margin-left: 40px;
+}
+
+.BesidePurchasedContainer{
+	background-color: #B0E57C;
+	border-radius: 15px;
+	max-width: 80%;
+	margin-left: 40px;
+}
+
+.BesidePurchasedContainer form{
+	padding-top:30px;
+	margin-left: 30px;
+}
+
+.col{
+	display: inline-block;
+}
+
+.address{
+	width: 400px;
+	margin-bottom: 10px;
+}
+.SummaryContainer{
+	background-color: #56BAEC;
+	border-radius: 15px;
+	max-width: 70%;
+	margin-left: 40px;
+}
+
+.SummaryContainer label{
+	margin-left: 40px;
+}
+
+#Name_holder{
+	margin-left: 40px;
+}
+
+#Address_holder{
+		margin-left: 40px;
+}
+
+h1{
+	font-family: "coolvetica";
+}
+
+@font-face{
+	font-family: "coolvetica";
+   src :url('../fonts/coolvetica/coolvetica rg.ttf');
+}
